@@ -17,16 +17,15 @@ const notices: Notice[] = [
     id: "1",
     title: "웹서버보안프로그래밍 개강 안내",
     author: "이병천",
-    content:
-      "2학기 웹서버보안프로그래밍 수업이 시작됩니다. 강의계획서를 확인해주세요.",
+    content: "강의계획서를 참고해주세요.",
     createdAt: "2026-09-01",
   },
   {
     id: "2",
-    title: "GitHub Organization 초대 안내",
+    title: "Github Organization 초대 안내",
     author: "이병천",
     content:
-      "과제 제출용 GitHub Organization 초대 메일을 확인하고 가입해주세요.",
+      "과제 제출용 Github Organization 초대 메일을 확인하고 가입해주세요.",
     createdAt: "2026-09-03",
   },
   {
@@ -46,8 +45,7 @@ function delay(ms: number) {
 }
 
 export async function getNotices(): Promise<Notice[]> {
-  await delay(600); // 실제 DB 조회를 흉내내는 지연 — loading.tsx가 보이는 이유
-  // 최신 글이 위로 오도록 정렬 (실제 DB에서도 흔히 하는 정렬)
+  await delay(600);
   return [...notices].sort((a, b) => (a.id < b.id ? 1 : -1));
 }
 
