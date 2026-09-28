@@ -4,7 +4,7 @@
 // 자연스럽게 처리되도록 합니다.
 
 import { useState, useTransition } from "react";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/button";
 import { likeProductAction } from "@/lib/actions";
 
 export function LikeButton({
