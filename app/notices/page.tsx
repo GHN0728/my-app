@@ -30,7 +30,7 @@ export default async function NoticesPage() {
                 {n.title}
               </p>
               <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                {n.author} · {n.createdAt}
+                {n.authorName} · {n.createdAt}
               </p>
             </Link>
           </li>
